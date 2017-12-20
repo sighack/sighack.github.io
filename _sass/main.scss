@@ -46,7 +46,7 @@ blockquote {
 }
 .logo {
   position: relative;
-  margin: 0 auto 35px;
+  margin: 0 auto 0px;
   text-align: center;
   /*animation-duration: 0.7s; */
   /*animation-fill-mode: both; */
@@ -55,14 +55,13 @@ blockquote {
   /*-webkit-animation-fill-mode: both; */
   /*-webkit-animation-name: bounce; */
   a {
-    background: #ddd url("gravatar_wrapper.png");
+    background: #fff;
     color: #000;
     text-decoration: none;
     font-weight: 700;
     height: 100px;
     width: 100px;
     font-size: 1.5em;
-    border-radius: 100%;
     display: inline-block;
     text-align: center;
     line-height: 100px;
@@ -70,7 +69,6 @@ blockquote {
     box-sizing: border-box;
     &:hover,
     &:focus {
-      background: #f14e32;
     }
     &:hover + .logo-prompt,
     &:focus + .logo-prompt {
@@ -78,9 +76,6 @@ blockquote {
     }
     .gravatar {
       margin-top: 5px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
     }
     @media (max-width : 480px) {&:hover + .logo-prompt,
       &:focus + .logo-prompt {
@@ -115,6 +110,35 @@ blockquote {
       margin-top: -5px;
     }
   }
+}
+.heading {
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+.heading {
+  a {
+    text-decoration: none;
+  }
+}
+.htitle {
+  font-size: 34px;
+  font-variant: small-caps;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.hsubtitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+  max-width: 200px;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
 iframe {
   margin: 45px 0 !important;
