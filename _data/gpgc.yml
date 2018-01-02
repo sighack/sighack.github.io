@@ -1,11 +1,11 @@
 repo_owner: sighack
 repo_name: sighack.github.io
 disabled: false
-use_show_action: false
+use_show_action: true
 label_name: Discussion
-label_color: 666666
+label_color: 333333
 github_application:
   client_id: 5727fd32eeb0279f5f6f
   code_authenticator: https://sighack.herokuapp.com/authenticate/
   callback_url: http://sighack.com/public/html/gpgc_redirect.html
-enable_diagnostics: true
+enable_diagnostics: false
