@@ -52,7 +52,6 @@ function gpgc_main() {
   if (gpgc.new_comments_disabled) {
     disableNewCommentForm();  
   } else {
-    hideElement(NewCommentDiv);
     initializeData();
     initializeEvents();
     initializeNewCommentForm();
