@@ -7,5 +7,5 @@ label_color: 666666
 github_application:
   client_id: 5727fd32eeb0279f5f6f
   code_authenticator: https://sighack.herokuapp.com/authenticate/
-  callback_url: http://www.sighack.com/public/html/gpgc_redirect/index.html
+  callback_url: http://www.sighack.com/public/html/gpgc_redirect.html
 enable_diagnostics: true
