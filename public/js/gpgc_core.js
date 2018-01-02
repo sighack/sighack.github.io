@@ -522,7 +522,7 @@ function formatComment(userAvatarUrl, userHtmlUrl, userLogin, commentBodyHtml, c
 
 function showAllComments(allComments) {
   var elementsToShow = [ AllCommentsDiv ];
-  var elementsToHide = [ ActionsDiv, NoCommentsDiv ];
+  var elementsToHide = [ ActionsDiv, NoCommentsDiv, NewCommentDiv ];
   updateElements(elementsToShow, elementsToHide, /* elementsToEnable: */ null, /* elementsToDisable: */ null);
 }
 
