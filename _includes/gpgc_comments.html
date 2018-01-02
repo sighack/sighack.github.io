@@ -5,12 +5,6 @@
   <p class="gpgc-centered-text">No comments</p>
 </div>
 
-<div class="gpgc-actions gpgc-hidden gpgc-color-theme" id="gpgc_actions">
-  <span class="gpgc-action gpgc-centered-text">
-    <button class="gpgc-large-secondary-button" id="show_comments_button" onclick="showAllComments(CommentsArray)"></button>
-  </span>
-</div>
-
 <div class="gpgc-comment gpgc-comments-font gpgc-color-theme" id="gpgc_new_comment">
   <div class="gpgc-comment-header">
     <a id="gpgc_reader_url" href="https://github.com/wireddown/ghpages-ghcomments"><img class="gpgc-avatar" id="gpgc_reader_avatar" src="https://raw.githubusercontent.com/wireddown/ghpages-ghcomments/gh-pages/public/apple-touch-icon-precomposed.png" height="42" /><span id="gpgc_reader_login">You</span></a>
@@ -32,6 +26,12 @@
     <button class="gpgc-normal-primary-button gpgc-text-button" id="login_button" onclick="loginToGitHub()"><strong>Login to GitHub</strong></button>
     <button class="gpgc-normal-primary-button gpgc-text-button gpgc-hidden" id="submit_button" onclick="postComment()"><strong>Submit</strong></button>
   </div>
+</div>
+
+<div class="gpgc-actions gpgc-hidden gpgc-color-theme" id="gpgc_actions">
+  <span class="gpgc-action gpgc-centered-text">
+    <button class="gpgc-large-secondary-button" id="show_comments_button" onclick="showAllComments(CommentsArray)"></button>
+  </span>
 </div>
 
 <div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_disabled">
