@@ -135,6 +135,7 @@
 .gpgc-comment-header > a {
   float: left;
   border-bottom: none;
+  margin-right: 10px;
 }
 
 .gpgc-avatar {
