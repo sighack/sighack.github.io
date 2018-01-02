@@ -485,9 +485,11 @@ function updateCommentsAndActions(allComments) {
 
     if (typeof gpgc.use_show_action === "boolean" && gpgc.use_show_action) {
       elementsToShow.push(ActionsDiv);
+      elementsToHide.push(NewCommentDiv);
       elementsToHide.push(AllCommentsDiv);
     } else {
       elementsToHide.push(ActionsDiv);
+      elementsToShow.push(NewCommentDiv);
       elementsToShow.push(AllCommentsDiv);
     }
   }
