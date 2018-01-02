@@ -1,11 +1,11 @@
-repo_owner: __your_github_username__
-repo_name: __your_github_repository__
+repo_owner: sighack
+repo_name: sighack.github.io
 disabled: false
 use_show_action: false
-label_name: Post Comments
+label_name: Discussion
 label_color: 666666
 github_application:
-  client_id: __your_github_app_client_id__
-  code_authenticator: __your_github_code_authenticator_url__
-  callback_url: http://__your_host__/public/html/gpgc_redirect/index.html
+  client_id: 5727fd32eeb0279f5f6f
+  code_authenticator: https://sighack.herokuapp.com/authenticate/
+  callback_url: http://www.sighack.com/public/html/gpgc_redirect/index.html
 enable_diagnostics: false
