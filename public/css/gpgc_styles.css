@@ -17,16 +17,16 @@
 .gpgc-color-theme .gpgc-tab,
 .gpgc-color-theme .gpgc-tab .selected,
 .gpgc-color-theme .gpgc-new-comment-form-textarea {
-  border: solid 1px #90a959;
+  border: solid 1px #888;
 }
 
 .gpgc-color-theme .gpgc-large-secondary-button {
-  color: #90a959;
+  color: #fff;
 }
 
 .gpgc-color-theme .gpgc-normal-primary-button,
 .gpgc-color-theme .gpgc-tab {
-  background-color: #90a959;
+  background-color: #fff;
 }
 
 /*
@@ -53,8 +53,8 @@
 .gpgc-text-button {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
   cursor: pointer;
 }
 
@@ -75,7 +75,7 @@
   }
 
   .gpgc-new-comment-actions {
-    padding: .4rem .4rem 3.2rem !important;
+    padding: .4rem .4rem 2rem !important;
   }
 }
 
@@ -110,7 +110,7 @@
 }
 
 .gpgc_last_div {
-  padding-top: 12rem;
+  padding-top: 1rem;
 }
 
 /*
@@ -120,10 +120,8 @@
 
 .gpgc-comment {
   margin-top: .8rem;
-  background-color: #eee;
-  border: solid 1px #eee;
-          border-radius: 0px 0px 24px 24px;
-  -webkit-border-radius: 0px 0px 24px 24px;
+  background-color: #f9f9f9;
+  border: solid 1px #f9f9f9;
 }
 
 .gpgc-comment-header {
@@ -133,12 +131,20 @@
   margin-bottom: .2rem;
 }
 
+.gpgc-comment-header > a {
+  float: left;
+  border-bottom: none;
+}
+
 .gpgc-avatar {
   display: inline;
-  margin-bottom: 0px;
+  margin-bottom: 0.4rem;
   margin-right: .4rem;
   vertical-align: baseline;
   border-radius: 0px;
+  max-width: 2rem;
+  float: left;
+  max-height: 2rem;
 }
 
 .gpgc-comment-contents {
@@ -166,7 +172,7 @@
 
 .gpgc-tab {
   margin-left: -5px;
-  color: #fff;
+  color: #333;
 }
 
 .gpgc-tab.selected {
@@ -179,10 +185,11 @@
   font-family: inherit;
   display: block;
   width: 100%;
-  min-height: 8rem;
+  box-sizing: border-box;
+  min-height: 4rem;
   margin-left: auto;
   margin-right: auto;
-  padding: .4rem;
+  padding: 10px;
   resize: vertical;
 }
 
@@ -194,7 +201,7 @@
 }
 
 .gpgc-normal-primary-button strong {
- color: #fff;
+ color: #333;
  }
 
 button:disabled {

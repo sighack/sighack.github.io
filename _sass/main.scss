@@ -287,7 +287,8 @@ article {
   display: block;
 }
 .page-navigation,
-.footer {
+.footer,
+.comments {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
@@ -385,4 +386,8 @@ section {
   100% {
     -webkit-transform: none;
   }
+}
+
+.comments {
+  padding-top: 30px;
 }
