@@ -8,7 +8,8 @@ On a boring weekend in December last year, I decided to set myself a fun challen
 
 The algorithm I picked was the movement of particles on a canvas based on a simple force field using Perlin noise. I built a handful of simple classes in Processing to help me quickly iterate on ideas and I was off.
 
-The process has been eye opening in my own understanding of creativity and how it can be *actively practiced*.
+
+This post details what I came up with along with some lessons learnt. In particular, this challenge has been helpful in cementing my own understanding of how to *actively practice* creativity using self-imposed constraints.
 
 ## Perlin Noise Fields: A Brief Overview
 
