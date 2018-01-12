@@ -147,12 +147,11 @@ Phew! Twenty five images done.
 
 ## Why?
 
-Why bother? Mostly because it's fun! Some things I've learnt:
+Why bother? It's fun! No other reason in particular. Here are some things I've learnt:
 
-1. It was surprisingly challenging to push myself into coming up with new
+1. It was surprisingly difficult to come up with new
 ways to work within the constraints I had imposed upon myself.
-
-2. At the end of this exercise, I can now point to countless variations one
+However, at the end of this exercise, I can point to countless variations one
 could pursue using the above designs as a starting point. All of this is just
 with one simple algorithm.
 
@@ -165,3 +164,12 @@ as simple as the first few designs above, gets your brain going.
 possibilities, is like being lost in a forest. Trying to be creative within
 some constraints is like walking through the forest on a path, occasionally
 choosing to go down a couple of paths revealed in front of you.
+
+5. After a while, I started to see higher-level techniques that I could
+apply. Stuff like the color-generation algorithm and the space-like background
+become reusable components and I've applied them numerous times. So if you
+see some complicated bit of work and wonder how in the world the creators came
+up with it, they probably didn't do it in one swoop. They probably iterated
+from something much simpler to reach that level of complexity over time.
+
+![](/public/images/end.gif)
