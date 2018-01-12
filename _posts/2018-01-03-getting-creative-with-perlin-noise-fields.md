@@ -173,4 +173,4 @@ see some complicated bit of work and wonder how in the world the creators came
 up with it, they probably didn't do it in one swoop. They probably iterated
 from something much simpler to reach that level of complexity over time.
 
-![](/public/images/end.gif)
+![](/public/images/end.gif){: .center-image }
