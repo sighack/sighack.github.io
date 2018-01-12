@@ -476,6 +476,7 @@ function updateCommentsAndActions(allComments) {
 
   if (allComments.length === 0) {
     elementsToShow.push(NoCommentsDiv);
+    elementsToShow.push(NewCommentDiv);
   } else {
     var allCommentsHtml = formatAllComments(CommentsArray);
     AllCommentsDiv.innerHTML = allCommentsHtml + AllCommentsDiv.innerHTML;
