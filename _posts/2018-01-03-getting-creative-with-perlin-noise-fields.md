@@ -69,7 +69,7 @@ I noticed that the golden-ratio based color generator was using the [HSB (or HSL
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-6.png)
 
-Next I decided to vary the saturation value based on the lifetime of the particle. The resulting effect was that the color went from white to full saturation while reducing in width.
+Next I decided to vary the saturation value based on the lifetime of the particle. The resulting effect was that the color went from full saturation to white while reducing in width.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-7.png)
 
