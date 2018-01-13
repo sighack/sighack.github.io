@@ -8,8 +8,9 @@ On a boring weekend in December last year, I decided to set myself a fun challen
 
 The algorithm I picked was *perlin noise fields*, the movement of particles on a canvas based on a simple force field created using Perlin noise. I built a handful of simple classes in [Processing](https://processing.org/) to help me quickly iterate on ideas and I was off.
 
-
 This post details what I came up with along with some lessons learnt. In particular, this challenge has been helpful in understanding how to *actively practice* creativity using self-imposed constraints.
+
+All Processing code used in this articlealong with images and animated GIFs can be found [here on Github](https://github.com/sighack/perlin-noise-fields)
 
 ## Perlin Noise Fields: A Brief Overview
 
