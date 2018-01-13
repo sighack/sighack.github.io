@@ -92,6 +92,7 @@ I then decided to try and draw lines perpendicular to the direction of motion us
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-11.png){: .clickgif }
 
 Here's another version I found saved during my explorations. I don't have the exact code used for this anymore; it's source has been lost forever!
+
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-11-2.png)
 
 At this point, I again found myself running out of ideas but I stayed the course. I decided to draw circles, but a custom style that had wobbly edges. Again some bug in my code led me to a happy discovery of the following image.
