@@ -131,7 +131,7 @@ I didn't particularly like the details on this one so I decided not to play with
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-20.png){: .clickgif }
 
-At this point I remembered [an old program I had seen over at OpenProcessing](https://www.openprocessing.org/sketch/110105) on simulating water color and decided to implement a similar drawing style for my particles.
+At this point I remembered [an old program I had seen over at OpenProcessing](https://www.openprocessing.org/sketch/110105) on simulating water color and decided to implement a similar drawing style for my particles. (Note: the animated GIF in this case is not that good due to the limited color palette.)
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-21.png){: .clickgif }
 
