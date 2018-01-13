@@ -414,3 +414,24 @@ img + em {
   font-weight: 600;
   margin-bottom: 15px;
 }
+
+.share-page {
+  text-align: center;
+  font-size: 14px;
+  background: #fff;
+  color: #555;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  a {
+    font-weight: 700;
+    color: #555;
+    margin-left: 10px;
+
+    &:hover {
+      border-bottom: 1px dashed #fff;
+    }
+  }
+}
