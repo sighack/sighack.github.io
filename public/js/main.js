@@ -3,14 +3,16 @@ $(function() {
         var current = $(this).attr('src');
         var name = current.split('.')[0];
         var extension = current.split('.')[1];
-        console.log(name + ',' + extension);
         if (extension == 'png') {
-            //console.log('switch to gif');
-            $(this).attr('src', name + '.gif');
+            name = name + '.gif';
         } else {
-            //console.log('switch to png');
-            $(this).attr('src', name + '.png');
+            name = name + '.png';
         }
+        $(this).css('opacity', '0.4');
+        $(this).attr('src', name).on('load', function() {
+            console.log('image loaded');
+            $(this).css('opacity', '1.0');
+        });
         return false;
     });
 });
