@@ -77,7 +77,7 @@ Next I decided to vary the saturation value based on the lifetime of the particl
 
 For some reason, it suddenly reminded me of the hyena's den from Lion King.
 
-![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/lion-king.jpg){: .clickgif }
+![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/lion-king.jpg)
 
 I decided to pursue that a little for the heck of it. With a bit of layering, I was quite happy with what emerged.
 
