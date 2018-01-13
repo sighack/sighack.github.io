@@ -10,7 +10,7 @@ The algorithm I picked was *perlin noise fields*, the movement of particles on a
 
 This post details what I came up with along with some lessons learnt. In particular, this challenge has been helpful in understanding how to *actively practice* creativity using self-imposed constraints.
 
-*All Processing code used in this article, along with images and animated GIFs, can be found [here on Github](https://github.com/sighack/perlin-noise-fields)*
+*All Processing code for this article, along with images and animated GIFs, can be found [here on Github](https://github.com/sighack/perlin-noise-fields)*
 
 ## Perlin Noise Fields: A Brief Overview
 
