@@ -1,5 +1,8 @@
 ---
 title: Getting Creative with Perlin Noise Fields
+author: Manohar Vanga
+image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+description: How to make infinite design variations using Perlin noise fields, a simple generative algorithm.
 ---
 
 In little gaps of time when I'm trying to unwind from my PhD work, I have a hobby of making generative art. Seeing interesting images appear within a short time using simple algorithms provides a refreshing change from my academic work where one ends up working for months or years on a project before seeing any success.

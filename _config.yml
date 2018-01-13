@@ -31,6 +31,8 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "docs" ]
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
 
 
 
