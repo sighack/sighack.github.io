@@ -4,7 +4,7 @@ title: Getting Creative with Perlin Noise Fields
 
 In little gaps of time when I'm trying to unwind from my PhD work, I have a hobby of making generative art. Seeing interesting images appear within a short time using simple algorithms provides a refreshing change from my academic work where one ends up working for months or years on a project before seeing any success.
 
-On a boring weekend in December last year, I decided to set myself a fun challenge: pick a simple process for generative art and attempt to make as many different artworks as I can by just tweaking the various available parameters.
+On a boring weekend in December last year, I decided to set myself a fun challenge: pick a simple generative process to simulate and attempt to make as many different variations as I can by just playing with the various available parameters.
 
 The algorithm I picked was the movement of particles on a canvas based on a simple force field using Perlin noise. I built a handful of simple classes in Processing to help me quickly iterate on ideas and I was off.
 
