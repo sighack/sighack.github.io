@@ -43,18 +43,22 @@ I added some basic classes to help me organize the code better. Primarily, I wan
 I first started with the low hanging fruit. A white background with lots of black particles set to a low opacity. This results in the following, where the parts where multiple particles interact end up darker.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-1.png){: .clickgif }
+*Iteration 1*
 
 Just out of curiosity, I decided to flip the colors. A black background with white streaks across it. The result was more interesting. The white in the foreground with black in the background gives a nicer sense of depth.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-2.png){: .clickgif }
+*Iteration 2*
 
 Going off that sense of depth, I decided to throw in some colors. Picking a palette of purples, I decided to layer multiple sets of particles, going from darker to lighter, and many to fewer. The result was quite beautiful.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-3.png){: .clickgif }
+*Iteration 3*
 
 At this point, I was getting a little bored with the variations and decided to play around with varying the thickness of lines. I used low opacity (1%) white particles on a black background and increased the thickness of the drawn lines with each successive frame. The result was quite pleasing, with the gray color almost disappearing into the background.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-9.png){: .clickgif }
+*Iteration 4*
 
 Out of chance, I happened to change the [stroke cap to square](https://processing.org/reference/strokeCap_.html) instead of the default round one. It suddenly introduced a whole new texture to the image.
 
@@ -63,18 +67,22 @@ Out of chance, I happened to change the [stroke cap to square](https://processin
 I wanted to get some color in there and so I started looking around for a way to procedurally generate a pleasing set of colors. I ended up finding [this great article](https://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/) on generating colors, and ended up using the golden ratio color generator described there. The result was spectacular!
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png){: .clickgif }
+*Iteration 5*
 
 Instead of drawing lines, I switched to drawing arcs instead. Again, a completely different result!
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-5.png){: .clickgif }
+*Iteration 6*
 
 I noticed that the golden-ratio based color generator was using the [HSB (or HSL) color space](https://en.wikipedia.org/wiki/HSL_and_HSV) and decided to play with that a bit. I picked a hue that I liked and picked random saturation and lightness values to get the following.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-6.png){: .clickgif }
+*Iteration 7*
 
 Next I decided to vary the saturation value based on the lifetime of the particle. The resulting effect was that the color went from full saturation to white while reducing in width.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-7.png){: .clickgif }
+*Iteration 8*
 
 For some reason, it suddenly reminded me of the hyena's den from Lion King.
 
@@ -83,14 +91,17 @@ For some reason, it suddenly reminded me of the hyena's den from Lion King.
 I decided to pursue that a little for the heck of it. With a bit of layering, I was quite happy with what emerged.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-8.png){: .clickgif }
+*Iteration 9*
 
 At this point, I was starting to panic. I seemed to be running out of ideas. How was I ever going to get to my initial target of twenty five? I decided to back off to grayscale and use layers. The first layer releases a set of low-opacity white particles that build the background, followed by a series of thin strands of gray.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-10.png){: .clickgif }
+*Iteration 10*
 
 I then decided to try and draw lines perpendicular to the direction of motion using some translation and rotation before drawing. Due to some broken logic, I ended up getting the following image; a haze with little spots of clarity. A happy accident.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-11.png){: .clickgif }
+*Iteration 11*
 
 Here's another version I found saved during my explorations. I don't have the exact code used for this anymore; it's source has been lost forever!
 
@@ -99,57 +110,71 @@ Here's another version I found saved during my explorations. I don't have the ex
 At this point, I again found myself running out of ideas but I stayed the course. I decided to draw circles, but a custom style that had wobbly edges. Again some bug in my code led me to a happy discovery of the following image.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-12.png){: .clickgif }
+*Iteration 12*
 
 Looking at it, I thought I could make it darker and get the feel of a starry sky. So I tried to make something along those lines. I threw in some stars in the sky and some shooting stars streaking across the sky.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-13.png){: .clickgif }
+*Iteration 13*
 
 I liked the shape of the shooting star where I varied the thickness of the line over the lifetime of the particle. I decided to layer different sizes of these shapes onto a white background. The result is a pattern that reminds me very much of the coat of fur on a Dalmatian!
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-14.png){: .clickgif }
+*Iteration 14*
 
 I decided to make the tails longer, and lower the opacity over time so that particles fade away. I also did this in layers to get a lot of variation in the different levels in the image. The result was something very smooth and organic.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-15.png){: .clickgif }
+*Iteration 15*
 
 I decided to add some color in there. I tried to get the feel of a chalk drawing done with a light sanguine color.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-23.png){: .clickgif }
+*Iteration 16*
 
 Going back to the space-like image, I decided to try and do the look of some kind of nebula in space. Instead I ended up with an angry swarm of some kind of space aliens from Star Trek.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-16.png){: .clickgif }
+*Iteration 17*
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-18.png){: .clickgif }
+*Iteration 18*
 
 They kind of looked like leaves so I tried doing a scene of autumn leaves on the ground. Again, reusing the background from the space scene, I played with different colors and layers to get the following.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-17.png){: .clickgif }
+*Iteration 19*
 
 One aspect I had not played with at all was the scale of the Perlin noise. Varying this, one can go from small scribbles to long sweeping lines as the force lines become more or less detailed. I used the color generator from before and drew some simple lines. I drew ten layers with each one's hue mapped evenly along the color range.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-19.png){: .clickgif }
+*Iteration 20*
 
 I didn't particularly like the details on this one so I decided not to play with the noise levels anymore. Instead I chose to draw some text, just a big 'X' as the particle moved. Along with some layering and choice of color, I ended up with this.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-20.png){: .clickgif }
+*Iteration 21*
 
 At this point I remembered [an old program I had seen over at OpenProcessing](https://www.openprocessing.org/sketch/110105) on simulating water color and decided to implement a similar drawing style for my particles. (Note: the animated GIF in this case is not that good due to the limited color palette.)
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-21.png){: .clickgif }
+*Iteration 22*
 
 I also tried varying the scale of the force. This meant that particles jumped a larger distance each frame, and instead of drawing lines, I just drew small circles at the new locations to end up with this.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-22.png){: .clickgif }
+*Iteration 23*
 
 At this point I was really running out of *novel* ideas but, as I had just two more to go, I decided to try different shapes. First I drew rectangles with some variation in their size and color. This was the result. It has the feel of a rough canvas.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-24.png){: .clickgif }
+*Iteration 24*
 
 Finally, for the last one, I decided to draw triangles. Every time a particle moved from an old position to a new position, I would use those as the first two points of triangle. I would additionally pick a point somewhere between them displaced vertically, and use that as a third point for a triangle. The result was quite intense!
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-25.png){: .clickgif }
+*Iteration 25*
 
-Phew! Twenty five images done.
+Phew! Done!
 
 ## Why?
 

@@ -406,3 +406,11 @@ section {
    filter: alpha(opacity=70);
  }
 }
+
+img + em {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
