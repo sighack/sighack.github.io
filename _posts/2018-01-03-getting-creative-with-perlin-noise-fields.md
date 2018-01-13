@@ -13,7 +13,7 @@ This post details what I came up with along with some lessons learnt. In particu
 
 ## Perlin Noise Fields: A Brief Overview
 
-The idea behind *Perlin noise fields* (not sure if that's the official term) is quite simple.
+The idea behind *Perlin noise fields* is quite simple (they are sometimes also referred to as perlin flow fields or vector fields).
 
 Think of the canvas as a two-dimensional force field. Each point on the canvas is assigned a direction in which it's "force" redirects particles.
 
