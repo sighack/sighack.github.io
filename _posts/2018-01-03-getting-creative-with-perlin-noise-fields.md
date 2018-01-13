@@ -6,10 +6,10 @@ In little gaps of time when I'm trying to unwind from my PhD work, I have a hobb
 
 On a boring weekend in December last year, I decided to set myself a fun challenge: pick a simple generative process to simulate and attempt to make as many different variations as I can by just playing with the various available parameters.
 
-The algorithm I picked was the movement of particles on a canvas based on a simple force field using Perlin noise. I built a handful of simple classes in Processing to help me quickly iterate on ideas and I was off.
+The algorithm I picked was *perlin noise fields*, the movement of particles on a canvas based on a simple force field created using Perlin noise. I built a handful of simple classes in [Processing](https://processing.org/) to help me quickly iterate on ideas and I was off.
 
 
-This post details what I came up with along with some lessons learnt. In particular, this challenge has been helpful in cementing my own understanding of how to *actively practice* creativity using self-imposed constraints.
+This post details what I came up with along with some lessons learnt. In particular, this challenge has been helpful in understanding how to *actively practice* creativity using self-imposed constraints.
 
 ## Perlin Noise Fields: A Brief Overview
 
@@ -17,21 +17,21 @@ The idea behind *Perlin noise fields* is quite simple (they are sometimes also r
 
 Think of the canvas as a two-dimensional force field. Each point on the canvas is assigned a direction in which it's "force" redirects particles.
 
-So for example, by assigning random directions of force for every point on the canvas, we end up with the following.
+So for example, by assigning random directions of force for every point on the canvas, we might end up with the following.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/random_force_field.png)
 
-To give a more organic feel to the randomness, Perlin noise is used instead in determining the directions of forces. [Adrian Biagioli has a great writeup](http://flafla2.github.io/2014/08/09/perlinnoise.html) explaining how it works in detail. What we end up with is the following.
+Now, to give a more organic feel to the randomness, Perlin noise is used instead in determining the directions of forces. [Adrian Biagioli has a great writeup](http://flafla2.github.io/2014/08/09/perlinnoise.html) explaining how it works in detail. Using Perlin noise, what we end up with is something along these lines.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/noise_force_field.png)
 
-As you can see, the directions have a much smoother feel than the jumpy and jarring random version.
+As you can see, the directions have a much smoother feel compared to jarring changes in the random version.
 
-With this in place, the next step is to release some particles onto the canvas and simulate their movement as affected by the underlying forces.
+With this in place, the next step is to release some particles onto the canvas and simulate their movement as effected by the underlying forces.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/particle_final.png)
 
-That's it!
+That's it! Like I said, it's pretty simple.
 
 I added some basic classes to help me organize the code better. Primarily, I wanted to be able to define particle sets, each containing one or more particles and a custom drawing function. I also implemented classes to help me layer particle sets. That way I can have a sequence of layers which are drawn on the canvas one after the other, and a layer is finished only when all particle sets assigned to a given layer have been simulated a certain number of steps.
 
