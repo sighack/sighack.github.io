@@ -37,6 +37,8 @@ I added some basic classes to help me organize the code better. Primarily, I wan
 
 ## The Iterations
 
+**Click on the images below to see an animation of the process. WARNING: in case you're viewing this on your mobile data, some of the GIFs are fairly large!**
+
 I first started with the low hanging fruit. A white background with lots of black particles set to a low opacity. This results in the following, where the parts where multiple particles interact end up darker.
 
 ![](/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-1.png){: .clickgif }
