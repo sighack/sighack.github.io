@@ -200,6 +200,7 @@ the color-generation algorithm, the dark, space-like background).
 So if you see some complex work and wonder how in the world the creators came
 up with it, they probably didn't do it in one swoop. They probably iterated
 from something much simpler to reach that level of complexity over time.
+**Creativity is a process, not a state of mind.**
 
 Finally, constraints help. Trying to be creative without constraints, among
 endless potential possibilities, is like wandering aimlessly through a vast desert
