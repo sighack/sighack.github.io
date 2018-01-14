@@ -40,7 +40,7 @@ corresponding to those edges. However, I have found the approach outlined in thi
 to be the *easiest* to implement and picture in your head; properties whose importance should
 never be underestimated!
 
-## Implementing it in Processing
+## Implementing It
 
 Having understood the high-level overview, it should be easy to understand how
 to implement this. The image below shows the key coordinates in our imaginary 3x3 grid
@@ -77,3 +77,8 @@ Similarly, the inner loop varies the Y-axis offset (stored in the variable `yoff
 In total, this results in nine calls of the inner-most code, where we modify
 any X and Y coordinates by adding the offset variables. So any `x` becomes `x + xoff` and any `y` become `y + yoff`.
 Simple!
+
+While I've shown how to do this for circles, you can extend this to any shape
+you like, including more complex macro-shapes comprising many smaller elements.
+The important thing to remember is to modify all the X and Y coordinates in the
+body of the inner-most loop by adding the offsets.
