@@ -435,3 +435,12 @@ img + em {
     }
   }
 }
+
+.loader {
+  font-weight: 700;
+  display: block;
+  float: left;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+}
