@@ -195,7 +195,7 @@ the more ways forward you'll see.**
 If you had told me at the beginning that I'd come up designs like Iteration 25,
 I would have scoffed. However, just sitting down and working on *something*, *anything*, even
 as simple as the first few designs above, gets your brain going.
-After a while, I started picking up higher-level, re-usable building blocks (*e.g.*, 
+After a while, **I started picking up higher-level, re-usable building blocks** (*e.g.*, 
 the color-generation algorithm, the dark, space-like background)
 So if you see some complex work and wonder how in the world the creators came
 up with it, they probably didn't do it in one swoop. They probably iterated
@@ -203,9 +203,9 @@ from something much simpler to reach that level of complexity over time.
 
 Finally, constraints help. Trying to be creative without constraints, among
 endless potential possibilities, is like wandering aimlessly through a vast desert
-while looking for an oasis. Trying to be creative within strict constraints is
+while looking for an oasis. **Trying to be creative within strict constraints is
 akin to walking through a thick forest by picking one of a handful of paths
-revealed in front of you.
+revealed in front of you.**
 
 So stop "waiting for motivation" or for "inspiration to strike" and just get to
 work.
