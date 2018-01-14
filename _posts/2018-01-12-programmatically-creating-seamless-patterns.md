@@ -82,3 +82,5 @@ While I've shown how to do this for circles, you can extend this to any shape
 you like, including more complex macro-shapes comprising many smaller elements.
 The important thing to remember is to modify all the X and Y coordinates in the
 body of the inner-most loop by adding the offsets.
+
+![](/public/images/end.gif){: .center-image }
