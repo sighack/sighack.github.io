@@ -5,6 +5,8 @@ image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-
 description: How to make infinite design variations using Perlin noise fields, a simple generative algorithm.
 ---
 
+**TL;DR: I made twenty five different designs using only Perlin flow fields, a simple generative algorithm. Scroll down to see the results.**
+
 In little gaps of time when I'm trying to unwind from my PhD work, I have a hobby of making generative art. Seeing interesting images appear within a short time using simple algorithms provides a refreshing change from my academic work where one ends up working for months or years on a project before seeing any success.
 
 On a boring weekend in December last year, I decided to set myself a fun challenge: pick a simple generative process to simulate and attempt to make as many different variations as I can by just playing with the various available parameters.
