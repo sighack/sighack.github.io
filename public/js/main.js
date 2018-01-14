@@ -8,7 +8,7 @@ $(function() {
         } else {
             name = name + '.png';
         }
-        $(this).css('opacity', '0.4');
+        $(this).css('opacity', '0.2');
         $("<p class='loader'>Loading...</p>").insertBefore(this);
         $(this).attr('src', name).on('load', function() {
             console.log('image loaded');
