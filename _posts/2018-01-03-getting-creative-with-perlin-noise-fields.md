@@ -183,29 +183,31 @@ Phew! Done!
 
 ## Why?
 
-Why bother? It's fun! No other reason in particular. Here are some things I've learnt:
+Why bother doing all this? It's fun! While personally, that's enough for me,
+I want to add some concluding thoughts on the exercise.
 
-1. It was surprisingly difficult to come up with new
-ways to work within the constraints I had imposed upon myself.
-However, at the end of this exercise, I can point to countless variations one
-could pursue using the above designs as a starting point. All of this is just
-with one simple algorithm.
+Initially, it was surprisingly difficult to come up with new
+ways to work within my self-imposed constraints.
+However, by the end of the exercise, I can confidently point at countless potential
+variations using what I learnt building the above designs. **The more you do,
+the more ways forward you'll see.**
 
-3. The more you do, the more ways forward you'll see. If you had told me at the
-beginning that I'd come up with the last few designs, I wouldn't have believed
-you.  However, just sitting down and working on *something*, *anything*, even
+If you had told me at the beginning that I'd come up designs like Iteration 25,
+I would have scoffed. However, just sitting down and working on *something*, *anything*, even
 as simple as the first few designs above, gets your brain going.
-
-4. Constraints help. Trying to be creative without constraints, among endless
-possibilities, is like being lost in a forest. Trying to be creative within
-some constraints is like walking through the forest on a path, occasionally
-choosing to go down a couple of paths revealed in front of you.
-
-5. After a while, I started to see higher-level techniques that I could
-apply. Stuff like the color-generation algorithm and the space-like background
-become reusable components and I've applied them numerous times. So if you
-see some complicated bit of work and wonder how in the world the creators came
+After a while, I started picking up higher-level, re-usable building blocks (*e.g.*, 
+the color-generation algorithm, the dark, space-like background)
+So if you see some complex work and wonder how in the world the creators came
 up with it, they probably didn't do it in one swoop. They probably iterated
 from something much simpler to reach that level of complexity over time.
+
+Finally, constraints help. Trying to be creative without constraints, among
+endless potential possibilities, is like wandering aimlessly through a vast desert
+while looking for an oasis. Trying to be creative within strict constraints is
+akin to walking through a thick forest by picking one of a handful of paths
+revealed in front of you.
+
+So stop "waiting for motivation" or for "inspiration to strike" and just get to
+work.
 
 ![](/public/images/end.gif){: .center-image }
