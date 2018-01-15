@@ -21,7 +21,7 @@ edges of the canvas. Any drawn shape that crosses the edge of the canvas must
 somehow be made to *bleed in* from the opposite one.
 
 The simplest approach I've found to achieving this consistently is to imagine
-our canvas as the center tile in a 3x3 grid of similar canvases.
+the canvas as the center tile in a 3x3 grid of similar canvases.
 
 With this in mind, the seamless effect can be achieved by ensuring that any
 shape that is drawn *is drawn across all nine of the canvases in the 3x3 grid*.

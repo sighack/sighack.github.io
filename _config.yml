@@ -20,6 +20,7 @@ mathjax:            true  # enables support for mathjax - set to false to disabl
 
 # Site Build
 highlighter:        rouge
+future:             true
 markdown:           kramdown
 kramdown:
     input:          GFM
