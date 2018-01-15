@@ -53,7 +53,7 @@ actual canvas; `(0, 0)` is at the upper-left corner of the middle tile, and the
 lower-right corner of the middle tile is the point `(width, height)`.
 
 With that in mind, given any arbitrary point on our canvas `(x, y)`, we can
-easily determine its location on the other eight tiles, as shown by the pink
+easily locate it within the other eight tiles using the canvas' `width` and `height`, as shown by the pink
 coordinates in the image above.
 
 So for example, to draw a circle seamlessly, we simply draw it using a custom
