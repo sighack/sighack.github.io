@@ -442,3 +442,27 @@ img + em {
   position: absolute;
   text-align: center;
 }
+
+#mc_embed_signup {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.subscribe-cta {
+  font-size: 15px;
+}
+
+.subscribe-form-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.subscribe-form-input {
+  position: relative;
+  max-width: 300px;
+  width: 300px;
+}
