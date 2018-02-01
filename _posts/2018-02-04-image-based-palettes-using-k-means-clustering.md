@@ -1,7 +1,7 @@
 ---
 title: Image-Based Palettes Using k-Means Clustering
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: http://sighack.com/public/images/2018-02-04-image-based-palettes-using-k-means-clustering/l1.png
 description: A quick demonstration of how k-means clustering can be used to extract basic color palettes from images.
 ---
 

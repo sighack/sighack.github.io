@@ -1,8 +1,8 @@
 ---
 title: Value Sketches Using k-Means Clustering
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
-description: Converting photos into value sketches using k-means clustering.
+image: http://sighack.com/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/example8.png
+description: A technique for segmenting images into discrete colors using k-means clustering.
 ---
 
 *All Processing code for this article, along with images, can be found [on Github](https://github.com/sighack/k-means-segmentation)*
@@ -292,15 +292,17 @@ The simplest way to calculate color distance is to calculate the Euclidean
 distance between the two colors using the red, green, and blue components
 as the three axes. This looks like the following.
 
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/euclidian.svg){: .center-image }
+
 ```java
 double cdist(color a, color b) {
-  float r1 = a >> 16 & 0xFF; // or red(a)
-  float g1 = a >> 16 & 0xFF; // or green(a)
-  float b1 = a >> 16 & 0xFF; // or blue(a)
+  float r1 = red(a);
+  float g1 = green(a);
+  float b1 = blue(a);
 
-  float r2 = b >> 16 & 0xFF; // or red(b)
-  float g2 = b >> 16 & 0xFF; // or green(b)
-  float b2 = b >> 16 & 0xFF; // or blue(b)
+  float r2 = red(b);
+  float g2 = green(b);
+  float b2 = blue(b);
 
   return sqrt(sq(r1-r2) + sq(g1-g2) + sq(b1-b2));
 }
@@ -314,15 +316,17 @@ human perception. A lot of experimentation has been done by other in
 this area and a simple set of coefficients that works well are 2, 4, and 3
 for the red, green, and blue components, respectively.
 
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/weighted.svg){: .center-image }
+
 ```java
 double cdist(color a, color b) {
-  float r1 = a >> 16 & 0xFF; // or red(a)
-  float g1 = a >> 16 & 0xFF; // or green(a)
-  float b1 = a >> 16 & 0xFF; // or blue(a)
+  float r1 = red(a);
+  float g1 = green(a);
+  float b1 = blue(a);
 
-  float r2 = b >> 16 & 0xFF; // or red(b)
-  float g2 = b >> 16 & 0xFF; // or green(b)
-  float b2 = b >> 16 & 0xFF; // or blue(b)
+  float r2 = red(b);
+  float g2 = green(b);
+  float b2 = blue(b);
 
   return sqrt(
             2 * sq(r1-r2) +
@@ -335,7 +339,11 @@ double cdist(color a, color b) {
 a faster approximation of the above, which is what I finally went with in
 my implementation.
 
-![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/equation.svg)
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/e1.svg){: .center-image }
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/e2.svg){: .center-image }
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/e3.svg){: .center-image }
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/e4.svg){: .center-image }
+![](/public/images/2018-02-04-generative-value-sketches-using-k-means-clustering/equation.svg){: .center-image }
 
 ```java
 double cdist2(color a, color b) {
@@ -351,6 +359,12 @@ double cdist2(color a, color b) {
   return deltac;
 }
 ```
+
+Finally, I want to point out that there are better ways to calculate the color
+distance using different color spaces. An example is [converting RGB values to
+CIELAB](http://colormine.org/convert/rgb-to-lab) color values [which is more suitable for such distance calculations](https://en.wikipedia.org/wiki/Color_difference#CIELAB_Delta_E*).
+However, this conversion is not trivial to implement, while the above works
+fairly well.
 
 To see the results, we write an `overlay()` function that returns a `PGraphic`
 containing the new segmented image.
