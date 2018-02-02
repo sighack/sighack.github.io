@@ -1,7 +1,7 @@
 ---
 title: Planetscape
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: http://sighack.com/public/images/2018-02-03-generative-sketch-planetscape/final-small.png
 description: A generative sketch - Planetscape
 ---
 
