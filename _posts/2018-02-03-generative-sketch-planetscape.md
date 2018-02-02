@@ -5,6 +5,8 @@ image: http://sighack.com/public/images/2018-02-03-generative-sketch-planetscape
 description: A generative sketch - Planetscape
 ---
 
+Click the images below to see a high-resolution version.
+
 <a href="/public/images/2018-02-03-generative-sketch-planetscape/final-highres.png" target="_blank">
 ![](/public/images/2018-02-03-generative-sketch-planetscape/final-small.png)
 </a>
