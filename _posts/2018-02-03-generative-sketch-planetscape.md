@@ -3,6 +3,7 @@ title: "Sketch #1 - Planetscape"
 author: Manohar Vanga
 image: http://sighack.com/public/images/2018-02-03-generative-sketch-planetscape/final-small.png
 description: A generative sketch - Planetscape
+gpgc_disabled: true
 ---
 
 Click the images below to see a high-resolution version.
