@@ -1,6 +1,6 @@
 repo_owner: sighack
 repo_name: sighack.github.io
-disabled: false
+disabled: true
 use_show_action: true
 label_name: Discussion
 label_color: 333333
