@@ -1,5 +1,5 @@
 ---
-title: "Sketch #1 - Planetscape"
+title: "Sketch: Planetscape"
 author: Manohar Vanga
 image: http://sighack.com/public/images/2018-02-03-generative-sketch-planetscape/final-small.png
 description: A generative sketch - Planetscape
