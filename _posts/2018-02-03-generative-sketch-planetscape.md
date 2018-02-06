@@ -23,6 +23,10 @@ Click the images below to see a high-resolution version.
 
 ## Intermediate Images
 
+This sketch was done using only three circle designs from [my explorations](2018-02-03-seventy-five-ways-to-draw-a-circle).
+Circle #1 is used for the stars, #7 for the planet itself, and a slightly
+modified version of #4 for the aura around the planet.
+
 Here are some of the ones I generated along the way to the final one but rejected. I like to
 put these here so you can see that this is just an exploratary process. Although
 I ended up going with a simple near-monochrome palette, as you can see, I did
