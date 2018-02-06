@@ -38,8 +38,3 @@ The time was spent more or less playing with color and composition.
 <a href="/public/images/2018-02-09-generative-sketch-starry-night/5.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/5.png)</a>
 <a href="/public/images/2018-02-09-generative-sketch-starry-night/6.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/6.png)</a>
 <a href="/public/images/2018-02-09-generative-sketch-starry-night/7.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/7.png)</a>
-<a href="/public/images/2018-02-09-generative-sketch-starry-night/8.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/8.png)</a>
-<a href="/public/images/2018-02-09-generative-sketch-starry-night/9.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/9.png)</a>
-<a href="/public/images/2018-02-09-generative-sketch-starry-night/10.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/10.png)</a>
-<a href="/public/images/2018-02-09-generative-sketch-starry-night/11.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/11.png)</a>
-<a href="/public/images/2018-02-09-generative-sketch-starry-night/12.png" target="_blank">![](/public/images/2018-02-09-generative-sketch-starry-night/12.png)</a>
