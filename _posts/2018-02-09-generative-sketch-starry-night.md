@@ -20,6 +20,7 @@ Click the images below to see a high-resolution version.
 <a href="/public/images/2018-02-09-generative-sketch-starry-night/detail3.png" target="_blank">
 ![](/public/images/2018-02-09-generative-sketch-starry-night/detail3.png)
 </a>
+<iframe src="https://player.vimeo.com/video/254623899" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Intermediate Images
 
