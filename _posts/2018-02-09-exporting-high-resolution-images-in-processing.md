@@ -181,8 +181,8 @@ copy-paste this [boilerplate code from over here on GitHub](https://gist.github.
 
 ## Converting a PDF to PNG
 
-It's annoying how something so easy is so difficult to find easily on the
-web so I'm adding this one additional piece of information here.
+It's annoying how information on doing something so easy is so difficult to
+find on the web so I'm adding this one additional piece of information here.
 
 Once you have a PDF file, you might want to convert it to a PNG or other
 raster format. To do this, I use the `pdftoppm` command-line utility that is part
