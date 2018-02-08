@@ -15,7 +15,7 @@ want.
 In the second approach, we'll first generate a PDF of our artwork and then use
 command-line tools to generate a high-resolution PNG version.
 
-**NOTE: If you want to start a new sketch with all this built in, you can just
+**NOTE: If you want to skip the details and start a new sketch with all this built in, you can just
 copy-paste this [boilerplate code from over here on GitHub](https://gist.github.com/mvanga/b1b8839f94aae70e34cfa3fb334e8845).**
 
 In order to create high-resolution images, however, we first need to make our sketch _deterministic_. That means
@@ -178,3 +178,24 @@ void keyPressed() {
 
 If you want to start a new sketch with all this built in, you can just
 copy-paste this [boilerplate code from over here on GitHub](https://gist.github.com/mvanga/b1b8839f94aae70e34cfa3fb334e8845).
+
+## Converting a PDF to PNG
+
+It's annoying how something so easy is so difficult to find easily on the
+web so I'm adding this one additional piece of information here.
+
+Once you have a PDF file, you might want to convert it to a PNG or other
+raster format. To do this, I use the `pdftoppm` command-line utility that is part
+of the [Poppler library](https://poppler.freedesktop.org/).
+
+```
+pdftoppm processing.pdf outputfilename -png -r 300
+```
+
+This converts the file `processing.pdf` and saves a new file `outputfilename.png`.
+The last argument describes how many pixels per inch should be generated,
+with 72 pixels making up 1 inch in a Processing sketch. So, a 720x720 pixel
+sketch would be 10x10 inches wide, and using a value of 300 with `pdftoppm`
+would result in a 3000x3000 pixel image.
+
+![](/public/images/end.gif){: .center-image }
