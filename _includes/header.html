@@ -1,12 +1,7 @@
 <aside class="logo">
 
-	{% if page.url == '/index.html' or page.url == '/' %}
-		{% assign link = '/about' %}
-		{% assign prompt = 'About the Author' %}
-	{% else %}
-		{% assign link = '/' %}
-		{% assign prompt = 'Back to Home' %}
-	{% endif %}
+	{% assign link = '/' %}
+	{% assign prompt = 'Back to Home' %}
 
 	<a href="{{ link }}">
 		<img src="http://www.gravatar.com/avatar/{{ site.author_gravatar }}.png?s=80" class="gravatar">
@@ -15,11 +10,7 @@
 </aside>
 
 <aside class="heading">
-	{% if page.url == '/index.html' or page.url == '/' %}
-		{% assign link = '/about' %}
-	{% else %}
-		{% assign link = '/' %}
-	{% endif %}
+	{% assign link = '/' %}
 	<a href="{{ link }}">
       <div class='htitle'>{{ site.title }}</div>
       <div class='hsubtitle'>{{ site.description }}</div>
