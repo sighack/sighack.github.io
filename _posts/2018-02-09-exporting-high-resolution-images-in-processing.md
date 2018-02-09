@@ -18,7 +18,7 @@ command-line tools to generate a high-resolution PNG version.
 **NOTE: If you want to skip the details and start a new sketch with all this built in, you can just
 copy-paste this [boilerplate code from over here on GitHub](https://gist.github.com/mvanga/b1b8839f94aae70e34cfa3fb334e8845).**
 
-In order to create high-resolution images, however, we first need to make our sketch _deterministic_. That means
+In order to create high-resolution images, we first need to make our sketch _deterministic_. That means
 we make sure that we can always recreate whatever is on the screen exactly
 the same way.
 
@@ -59,7 +59,7 @@ void render() {
 }
 ```
 
-Above, in `setup()`, we first pick some changing value for the seed using
+Above, in `setup()`, we first pick some random initial number for the seed using
 `millis()`. Note that the seed itself can be chosen randomly, but to re-create
 an identical image, the same seed needs to be used. We therefore store it in
 the `seed` variable.
@@ -89,7 +89,7 @@ void saveHighRes(int scaleFactor) {
   seededRender();
   endRecord();
 
-  hires.save("highres-" + seed + ".png");
+  hires.save(seed + "-highres.png");
   println("Finished");
 }
 ```
@@ -104,7 +104,7 @@ to scale out any drawing actions that are performed using the
 
 I've successfully used this technique to generate images as large
 as 10,000x10,000 pixels. The limiting factor is the amount of RAM available to
-Processing, which can be increased to a certain degree in its preferences window.
+Processing, which can be increased to a certain degree in the preferences window.
 
 ![](/public/images/exporting-high-resolution-images-in-processing/preferences.png)
 
@@ -143,11 +143,11 @@ I can recreate it later if needed. It looks like this:
  * The keyPressed handler handles the following
  * -- If the key 's' (lower case) is pressed, then
  *    it will save a low-resolution version of the
- *    image into a file 'lowres-<seed>.png'.
+ *    image into a file '<seed>-lowres.png'.
  *
  * -- If the key 'h' (lower case) is pressed, then
  *    it will save a high-resolution version into
- *    the file 'highres-<seed>.png', scaled by an
+ *    the file '<seed>-highres.png', scaled by an
  *    amount set in the SCALE_FACTOR variable.
  *    So if your screen width is 500 pixels, a
  *    scale factor of 10 will generate a
@@ -155,7 +155,7 @@ I can recreate it later if needed. It looks like this:
  *
  * -- If the key 'p' (lower case) is pressed, then
  *    it will save a vector version as PDF into the
- *    file 'vector-<seed>.pdf', which is inherently
+ *    file '<seed>-vector.pdf', which is inherently
  *    scalable to any resolution.
  *
  * -- If any other key is pressed, a new random
