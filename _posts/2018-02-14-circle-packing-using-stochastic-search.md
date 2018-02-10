@@ -12,11 +12,11 @@ examples of how it can be applied to circle packing.
 
 ## What is Stochastic Search?
 
-It's just a fancy way of saying that we're going to perform some random search
-until some sort of condition is met. This is particularly useful for problems
+"Stochastic search" is just a fancy way of saying that we're going to perform a random search
+until some condition is met. This is particularly useful for problems
 where a systematic approach is far too computationally expensive.
 
-Now we're interesting in the context of generative art where the biggest application
+Now we're interested in the context of generative art where the biggest application
 is in _packing_ shapes. The basic algorithm for stochastic search therefore
 looks like this:
 
