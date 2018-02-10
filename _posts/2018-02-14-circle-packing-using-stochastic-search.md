@@ -322,3 +322,5 @@ using spacial search with a QuadTree. Stay tuned!
 
 In the meantime, you can subscribe to my list to stay informed on
 new posts! No spam, guaranteed.
+
+![](/public/images/end.gif){: .center-image }
