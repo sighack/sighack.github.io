@@ -16,9 +16,8 @@ examples of how it can be applied to circle packing.
 until some condition is met. This is particularly useful for problems
 where a systematic approach is far too computationally expensive.
 
-Now we're interested in the context of generative art where the biggest application
-is in _packing_ shapes. The basic algorithm for stochastic search therefore
-looks like this:
+Now we're interested in stochastic search within the context of generative art where the biggest application
+is in _packing shapes_. The basic algorithm for stochastic search looks like this:
 
 ```
 Start with an initial state
