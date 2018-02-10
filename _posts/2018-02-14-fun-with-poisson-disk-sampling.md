@@ -30,7 +30,7 @@ large radii and working backwards to a small one brings out the details in the
 image. Colors are assigned to the ellipses based on the average color
 of all pixels in the region. A final touch of [a canvas-like grid](generative-watercolor-in-processing) makes it appear painterly.
 
-## Pencil Sketches
+## Charcoal Sketches
 <a href="/public/images/fun-with-poisson-disk-sampling/501-highres.png" target="_blank">
 ![](/public/images/fun-with-poisson-disk-sampling/501-lowres.png)
 </a>
