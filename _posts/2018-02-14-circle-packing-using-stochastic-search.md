@@ -5,6 +5,8 @@ image: http://sighack.com/public/images/circle-packing-using-stochastic-search/c
 description: A tutorial on how stochastic search can be used as the basis for various generative art algorithms.
 ---
 
+*All Processing code for this article, along with images and animated GIFs, can be found [on Github](https://github.com/sighack/circle-packing-stochastic)*
+
 In this post I'm going to explain the idea behind stochastic search and two
 examples of how it can be applied to circle packing.
 
