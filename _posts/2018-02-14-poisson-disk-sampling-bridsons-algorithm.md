@@ -1,7 +1,7 @@
 ---
 title: "Implementing Poisson Disk Sampling in Processing"
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: https://sighack.com/public/images/poisson-disk-sampling-bridsons-algorithm/sampling.png
 description: A tutorial on implementing Poisson disk sampling using Bridson's algorithm for quickly placing points evenly in an area.
 ---
 
