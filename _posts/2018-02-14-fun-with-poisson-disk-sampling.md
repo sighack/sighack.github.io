@@ -2,11 +2,11 @@
 title: "Fun With Poisson Disk Sampling"
 author: Manohar Vanga
 image: http://sighack.com/public/images/fun-with-poisson-disk-sampling/553-lowres.png
-description: This post explores four different styles of images that can be generated using a simple Poisson disk sampling algorithm
+description: This post explores different styles of images that can be generated using a simple Poisson disk sampling algorithm
 ---
 
 In my last post, I showed [how to implement Bridson's algorithm for Poisson disk
-sampling](poisson-disk-sampling-bridsons-algorithm). You might be wondering where it might be useful. Below I show four
+sampling](poisson-disk-sampling-bridsons-algorithm). You might be wondering where it might be useful. Below I show some
 examples of how it can be used.
 
 **Click the images below to view a high-resolution version. WARNING: some
