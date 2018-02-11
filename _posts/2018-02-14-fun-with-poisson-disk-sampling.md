@@ -49,6 +49,16 @@ Here, I just generate a Voronoi diagram based on the generated points. The
 tiles are colored with the average color in the image at that location, and
 the borders are slightly darkened to give it a mosaic-like look.
 
+## Layered Voronoi Abstracts
+<a href="/public/images/fun-with-poisson-disk-sampling/478-highres.png" target="_blank">
+![](/public/images/fun-with-poisson-disk-sampling/478-lowres.png)
+</a>
+
+Here, I just generate a Voronoi image as in the previous one. However, I color
+the polygons at a 50% opacity and layer them ten times. Since the generated
+Voronoi diagrams are slightly different each time, they form this nice abstract
+look.
+
 These are barely scratching at the surface of what is possible! If you come up
 with some cool examples, do write to me and I'll add them here!
 
