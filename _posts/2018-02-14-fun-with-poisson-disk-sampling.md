@@ -23,7 +23,7 @@ of the images are quite large (over 65MB).**
 This is a very simple algorithm. Once all the points have been created, for each one, I simply
 mapped the size of the ellipse drawn to the grayscale value of the pixel in the image!
 
-## Impressionistic
+## Oil On Canvas
 <a href="/public/images/fun-with-poisson-disk-sampling/488-highres.png" target="_blank">
 ![](/public/images/fun-with-poisson-disk-sampling/488-lowres.png)
 </a>
