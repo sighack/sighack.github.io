@@ -62,6 +62,15 @@ the polygons at a 50% opacity and layer them ten times. Since the generated
 Voronoi diagrams are slightly different each time, they form this nice abstract
 look.
 
+## Cross Hatching
+<a href="/public/images/fun-with-poisson-disk-sampling/603-highres.png" target="_blank">
+![](/public/images/fun-with-poisson-disk-sampling/603-lowres.png)
+</a>
+
+Here, I just ignore points whose grayness value is above some threshold (that is,
+they're too light), and for the remaining ones, I generate some cross-hatched lines
+using some `translate()` and `rotate()` calls.
+
 These are barely scratching at the surface of what is possible! If you come up
 with some cool examples, do write to me and I'll add them here!
 
