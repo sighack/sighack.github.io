@@ -6,8 +6,11 @@ description: This post explores different styles of images that can be generated
 ---
 
 In my last post, I showed [how to implement Bridson's algorithm for Poisson disk
-sampling](poisson-disk-sampling-bridsons-algorithm). You might be wondering where it might be useful. Below I show some
-examples of how it can be used.
+sampling](poisson-disk-sampling-bridsons-algorithm), and you might find yourself wondering where it might be useful.
+Well, wonder no more! In this post, I show some examples of how it can be used
+to make interesting versions of this image below.
+
+![](/public/images/fun-with-poisson-disk-sampling/portrait6.jpg)
 
 **Click the images below to view a high-resolution version. WARNING: some
 of the images are quite large (over 65MB).**
