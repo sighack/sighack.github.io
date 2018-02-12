@@ -71,6 +71,16 @@ Here, I just ignore points whose grayness value is above some threshold (that is
 they're too light), and for the remaining ones, I generate some cross-hatched lines
 using some `translate()` and `rotate()` calls.
 
+## Pointillism
+<a href="/public/images/fun-with-poisson-disk-sampling/1797-highres.png" target="_blank">
+![](/public/images/fun-with-poisson-disk-sampling/1797-lowres.png)
+</a>
+
+Here, I create a base layer that follows the colors of the image strictly,
+but only when using large radii. When I get to the smaller radii, I start
+increasing the
+color variance a lot, resulting in a nice Pointillistic image.
+
 These are barely scratching at the surface of what is possible! If you come up
 with some cool examples, do write to me and I'll add them here!
 
