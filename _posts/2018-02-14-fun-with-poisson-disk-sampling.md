@@ -81,6 +81,17 @@ but only when using large radii. When I get to the smaller radii, I start
 increasing the
 color variance a lot, resulting in a nice Pointillistic image.
 
+## Post-Impressionistic
+<a href="/public/images/fun-with-poisson-disk-sampling/0-highres.png" target="_blank">
+![](/public/images/fun-with-poisson-disk-sampling/0-lowres.png)
+</a>
+
+In this one, I successively reduce the radius for which points are generated.
+For each set of points at a given radius, I generated brushstrokes oriented
+based on the image gradient at that point. My gradient implementation was not
+particularly good, and resulted in interesting artefacts! A little variation
+in the color brings out the character even more!
+
 These are barely scratching at the surface of what is possible! If you come up
 with some cool examples, do write to me and I'll add them here!
 
