@@ -6,6 +6,8 @@ image: http://sighack.com/public/images/cohen-sutherland-line-clipping-algorithm
 description: A tutorial on how to implement Cohen-Sutherland line clipping in Processing.
 ---
 
+*All Processing code for this article, along with images, can be found [on Github](https://github.com/sighack/cohen-sutherland-clipping). For a copy-pasteable version of the algorithm, [click here](#copypaste).*
+
 I've been following the work of [Paul Rickards](https://twitter.com/paulrickards)
 over on Twitter and he's been churning out absolutely beautiful stuff on his
 plotters. If you haven't seen them yet, go check them out over at 
@@ -394,6 +396,7 @@ if ((code & (1 << 0)) != 0) {
 Putting it all together, here is our final function for Cohen-Sutherland
 line clipping in one nice copy-pasteable snippet:
 
+<a name="copypaste"></a>
 ```java
 /*
  * Encode a given point (x, y) into the different regions of
