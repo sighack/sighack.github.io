@@ -1,7 +1,7 @@
 ---
 title: A Processing Boilerplate with Gcode Export
 author: Manohar Vanga
-image: http://sighack.com/public/images/processing-boilerplate-with-gcode-export/showcase.png
+image: https://sighack.com/public/images/processing-boilerplate-with-gcode-export/showcase.png
 description: A Processing boilerplate with lots of export options, include standard Gcode for plotters.
 ---
 
