@@ -1,3 +1,10 @@
+---
+title: A Processing Boilerplate with Gcode Export
+author: Manohar Vanga
+image: http://sighack.com/public/images/processing-boilerplate-with-gcode-export/showcase.png
+description: A Processing boilerplate with lots of export options, include standard Gcode for plotters.
+---
+
 I've been using a standard boilerplate template in Processing that I wrote for myself a
 while back and I've been slowly extending it with more export features.
 Having just finished a Gcode-export feature, I figured I'd release it
