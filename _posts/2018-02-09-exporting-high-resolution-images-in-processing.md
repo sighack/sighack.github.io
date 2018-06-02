@@ -16,7 +16,7 @@ In the second approach, we'll first generate a PDF of our artwork and then use
 command-line tools to generate a high-resolution PNG version.
 
 **NOTE: If you want to skip the details and start a new sketch with all this built in, you can just
-copy-paste this [boilerplate code from over here on GitHub](https://gist.github.com/mvanga/b1b8839f94aae70e34cfa3fb334e8845).**
+copy-paste this [boilerplate code from over here on GitHub](https://github.com/sighack/processing-boilerplate).**
 
 In order to create high-resolution images, we first need to make our sketch _deterministic_. That means
 we make sure that we can always recreate whatever is on the screen exactly
