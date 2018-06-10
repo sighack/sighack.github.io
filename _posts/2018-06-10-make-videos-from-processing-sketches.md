@@ -1,7 +1,7 @@
 ---
 title: "Making Videos from Processing Sketches"
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: http://sighack.com/public/images/make-videos-from-processing-sketches/moviemaker.png
 description: A tutorial on simple ways to export videos from your Processing sketches.
 ---
 

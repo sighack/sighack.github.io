@@ -2,7 +2,7 @@
 title: Convert Processing Sketches into Animated GIFs
 layout: post
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: http://sighack.com/public/images/make-animated-gifs-in-processing/out3.gif
 description: A tutorial on how to covert your Processing sketches into animated GIFs.
 ---
 
