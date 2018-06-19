@@ -141,12 +141,27 @@ the following command:
 
 ## Approach 3: Generate GIFs with FFmpeg
 
-You can also generate GIFs using [FFmpeg](https://www.ffmpeg.org/):
+You can also generate GIFs using [FFmpeg](https://www.ffmpeg.org/). I use the
+following script taken from [this nice tutorial on getting high-quality GIFs
+using FFmpeg](http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html)
 
-    ffmpeg -i *.png out.gif
+```bash
+#!/bin/sh
 
-The last one being the easiest and most flexible (e.g., you can also create
-videos with FFmpeg).
+palette="/tmp/palette.png"
+filters="fps=15,scale=320:-1:flags=lanczos"
+
+ffmpeg -v warning -i %05d.png -vf "$filters,palettegen" -y $palette
+ffmpeg -v warning -i %05d.png -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y $1)
+```
+
+Remember to save
+your frames with `saveFrame("#####.png")`, using five hash signs to match the
+`%05d.png` in the script. Now just save the script as `gif.sh` and invoke it
+withing the folder containing the PNGs and an output file name as an argument:
+
+    $ cd <folder-with-PNGs>
+    $ ./gif.sh out.gif
 
 Have fun creating GIFs!
 
