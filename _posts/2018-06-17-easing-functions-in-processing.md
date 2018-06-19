@@ -24,7 +24,8 @@ linear interpolation in the range that it is provided (as far as I know).
 
 So I went ahead and implemented some more options! Here is the same image using
 my custom `map()` replacement (called `map2()` of course) with a quartic
-ease-out, in place of the standard linear mapping. If that doesn't make any
+ease-out to calculate the spacing between
+the parallel lines in each grid square, in place of the standard linear mapping. If that doesn't make any
 sense yet, keep reading!
 
 ![](/public/images/easing-functions-in-processing/555-lowres.png)
@@ -187,7 +188,8 @@ and de-emphasize the extremes.
 
 Easing functions provide a lot of control over the distribution of values of
 your output range. I started with my example of using it to create more darks
-for the image below: I used a quartic ease out to map values instead of the
+for the image below: I used a quartic ease-out to map the spacing between
+the parallel lines in each grid square instead of the
 standard linear `map()` function. All of that should make sense to you now!
 
 ![](/public/images/easing-functions-in-processing/555-lowres.png)
