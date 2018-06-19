@@ -91,7 +91,7 @@ In the animation above, the three bars at the bottom capture the Y value of
 the curve (in the form of a gray value) as a function of the X value (the
 position of the slider).
 
-What we see is that **easing out stays primarily in the lighter regions**.
+What we see is that **easing in stays primarily in the lighter regions**.
 
 In contrast, **easing out stays primarily in the darker regions**.
 
