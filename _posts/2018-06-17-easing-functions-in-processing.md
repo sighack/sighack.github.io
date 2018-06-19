@@ -1,7 +1,7 @@
 ---
 title: Easing Functions in Processing
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: https://sighack.com/public/images/easing-functions-in-processing/555-lowres.png
 description: The map() function in Processing only does linear interpolation. In this post, we'll learn a few more options!
 ---
 
