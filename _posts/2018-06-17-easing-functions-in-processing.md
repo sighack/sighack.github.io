@@ -194,6 +194,11 @@ standard linear `map()` function. All of that should make sense to you now!
 
 ![](/public/images/easing-functions-in-processing/555-lowres.png)
 
+If you're interested in learning more, you should check out the following
+video recommended to me by [Benjamin Kovach](https://www.kovach.me/):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mr5xkf6zSzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 You can find all the source code for the easing functions in Processing [over
 here on Github](https://github.com/sighack/easing-functions)
 
