@@ -107,11 +107,9 @@ To use these two variables in Processing is very simple:
 int totalFrames = ...;
 int[] actionFrames = { ... };
 
-int start_time;
 int frame_index = 0;
 
 void setup() {
-  start_time = millis();
 }
 
 void draw() {
@@ -126,13 +124,13 @@ void draw() {
 ```
 
 In the above code, we first copy-paste the two variables that are given to
-us by the `onsets.sh` script. We additionally need two variables: `start_time`,
-which is initialized to the start of the sketch and should be the last statement
-in `setup()`, and `frame_index` which is initialized to `0`.
+us by the `onsets.sh` script. We additionally need one variable: 
+`frame_index` which is initialized to `0` (and represents the current index
+into the `actionFrames` array).
 
-Now, in the `draw()` function, we check if we haven't reached our total number
+Now, in the `draw()` function, we check if we have reached our total number
 of onset times (stored in `totalFrames`), and if not, check if the frame number
-at the index is equal to the current frame (using Processing's `frameCount`
+at the current index is equal to the current frame (using Processing's `frameCount`
 variable), and if so, perform some actions.
 
 Finally every frame is saved as an image, which can then be [glued together into
