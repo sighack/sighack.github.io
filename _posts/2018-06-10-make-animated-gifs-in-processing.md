@@ -158,7 +158,7 @@ ffmpeg -v warning -i %05d.png -i $palette -lavfi "$filters [x]; [x][1:v] palette
 Remember to save
 your frames with `saveFrame("#####.png")`, using five hash signs to match the
 `%05d.png` in the script. Now just save the script as `gif.sh` and invoke it
-withing the folder containing the PNGs and an output file name as an argument:
+within the folder containing the PNGs and give it an output file name as an argument:
 
     $ cd <folder-with-PNGs>
     $ ./gif.sh out.gif
