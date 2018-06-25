@@ -18,9 +18,8 @@ therefore simulating a random process. In this case, the random steps
 are taken in the color domain starting from a "seed" pixel, with neighboring
 pixels being colored with a random perturbation in color.
 
-In this post, I show how I implemented such flood-fill art in
-Processing, and show a visual exploration of tweaking some of the available
-parameters.
+In this post I show a visual exploration of tweaking some of the available
+parameters of my implementation of such flood-fill art in Processing.
 
 ## Overview of the Approach
 
