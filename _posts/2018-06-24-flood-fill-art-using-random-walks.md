@@ -40,8 +40,6 @@ the kinds of explorations I like to do.
 So let's go through a little gallery of permutations for this simple
 technique where I play around with one or more of the levers available
 to us.
-I'll then detail how my Processing implementation for this works so you can
-confidently tweak it yourself.
 
 ## Exploration
 
