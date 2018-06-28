@@ -16,7 +16,7 @@ of possible variations. The idea is that of a [random walk](https://en.wikipedia
 which is a fancy way of saying you change something randomly each step,
 therefore simulating a random process. In this case, the random steps
 are taken in the color domain starting from a "seed" pixel, with neighboring
-pixels being colored with a random perturbation in color.
+pixels being colored with a slight perturbation in color.
 
 In this post I show a visual exploration of tweaking some of the available
 parameters of my implementation of such flood-fill art in Processing.
@@ -25,14 +25,15 @@ parameters of my implementation of such flood-fill art in Processing.
 
 Here's a quick summary of my approach to creating this kind of flood-fill art
 using random walks.
-First, we sprinkly one or more "seed" points around the canvas, give them an
+First, we sprinkle one or more "seed" points around the canvas, give them an
 initial color, and add them to a list of points to be processed. Then, every
 iteration, a point is randomly picked from this list, it's uncolored
 neighbors are colored with a slightly mutated color, and those points are
 then subsequently added to the list. Eventually, all points are colored and
 the list becomes empty, at which point we stop. In my implementation, instead
 of coloring individual pixels, I draw tiny lines from the "seed" pixel to its
-neighbors, allowing me to scale up my images to arbitrary resolutions.
+neighbors, with the appropriate stroke color. This allows me to scale up my
+images to arbitrary resolutions.
 
 The approach is surprisingly flexible and serves as a good demonstration of
 the kinds of explorations I like to do.
