@@ -104,7 +104,7 @@ ArrayList<PVector> poissonDiskSampling(float radius, int k) {
 
   /* Figure out no. of cells in the grid for our canvas */
   int ncells_width = ceil(width/cellsize) + 1;
-  int ncells_height = ceil(width/cellsize) + 1;
+  int ncells_height = ceil(height/cellsize) + 1;
 
   /* Allocate the grid an initialize all elements to null */
   grid = new PVector[ncells_width][ncells_height];
