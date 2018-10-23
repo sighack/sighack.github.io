@@ -12,7 +12,7 @@ twitter_username:   sighack # Your Twitter username here
 github_username:    sighack # Your GitHub username here
 
 # Site Settings
-url:                http://sighack.com # main url
+url:                https://sighack.com # main url
 baseurl:            / # for gh-pages
 permalink:          /post/:title # Post permalink
 timezone:           Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
