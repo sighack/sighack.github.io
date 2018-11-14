@@ -23,7 +23,7 @@ circle, and second we check if it satisfies our constraints. If so, we add it, a
 if not, throw it out. Then we repeat these two steps until we fail to find a candidate
 a certain number of times.
 
-For my stippling approac, in order to generate a candidate circle, I first
+For my stippling approach, in order to generate a candidate circle, I first
 generate a random coordinate on the canvas. Next, I check the grayscale value of the
 image at that pixel and generate a circle proportional to it. Darker pixels result in
 a small candidate circle while lighter areas result in a circle with a larger radius.
