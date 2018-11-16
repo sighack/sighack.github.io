@@ -95,7 +95,7 @@ would happen if you converted to PNG).
 <a name="d"></a>
 ## Other Fun Formats!
 
-The `pdftoppm` tool can also convert to a bitmap format ((Portable Bitmap Format)[https://en.wikipedia.org/wiki/Netpbm_format])
+The `pdftoppm` tool can also convert to a bitmap format ([Portable Bitmap Format](https://en.wikipedia.org/wiki/Netpbm_format))
 which is literally a text file of ones and zeroes (in binary) representing the black and
 white version of the PDF:
 
@@ -104,7 +104,7 @@ white version of the PDF:
 |-----|------|
 |![](/public/images/convert-pdf-and-svg-to-high-resolution-images/test-1.jpg)|![](/public/images/convert-pdf-and-svg-to-high-resolution-images/test-1-mono.jpg)
 
-You can also generate a grayscale version of it which is output in the PGM ((Portable Graymap Format)[https://en.wikipedia.org/wiki/Netpbm_format]):
+You can also generate a grayscale version of it which is output in the PGM ([Portable Graymap Format](https://en.wikipedia.org/wiki/Netpbm_format)):
 
     pdftoppm input.pdf outputname -gray -rx 300 -ry 300
 
