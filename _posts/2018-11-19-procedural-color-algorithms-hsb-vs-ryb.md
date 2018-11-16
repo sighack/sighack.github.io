@@ -41,7 +41,7 @@ Here's the simple function I ended up with to correct HSB hues:
 
 ```java
 float hsbCorrection(float hue) {
-  return map3(hue, 0, 360, 0, 360, 1.6, EASE_IN);
+  return map3(hue % 360, 0, 360, 0, 360, 1.6, EASE_IN);
 }
 ```
 
@@ -76,6 +76,8 @@ float hsbCorrection(float hue) {
     {300, 267}, {315, 282}, {330, 298}, {345, 329},
     {360, 0  }
   };
+
+  hue = hue % 360;
   
   for (int i = 0; i < ryb_wheel.length - 1; i++) {
     float x0 = ryb_wheel[i][0];
