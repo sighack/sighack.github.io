@@ -1,5 +1,5 @@
 ---
-title: "Procedural Color - HSB vs RYB"
+title: "Procedural Color - HSB vs. RYB"
 author: Manohar Vanga
 image: http://sighack.com/public/images/2018-02-11-generative-color-algorithms/cw-corrected2.png
 description: A look at the difference between HSB and RYB colorspaces, and how to programmatically convert between them.
