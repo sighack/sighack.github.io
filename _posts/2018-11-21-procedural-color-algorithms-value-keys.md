@@ -62,8 +62,8 @@ Here is the same image as above, but **using a middle key**:
 
 ![](/public/images/2018-02-11-generative-color-algorithms/key-mid.png)
 
-Finally, here is an identical version **using a high key, with the higher values on
-our value scale**:
+Finally, here is an identical version **using a high key, with only the darker
+values from our value scale**:
 
 ![](/public/images/2018-02-11-generative-color-algorithms/key-high.png)
 
@@ -72,36 +72,40 @@ visual difference between each one. You might want a specific overall
 shade for your artwork, which naturally leads you to a subset of values.
 
 However, this is not the primary reason I'm writing about this. The big
-reason I think value scales can be powerful for generative artists are
-because it opens up the artwork and allows for introducing other elements.
+reason I think value scales can be powerful for generative artists is
+because it provides more control over your artwork, opening it up for
+other elements. Further, by reducing the value contrast, we remove the
+strength of value alone to define the entire artwork, giving us breathing
+room to add in different kinds of contrasts (e.g., hue, shape, and temperature).
 
 For example, recall from [my previous post](procedural-color-algorithms-monochromatic-color-scheme)
 that we can use contrasting values to direct the viewer's eye towards
 certain elements on the screen. Here are three very simple examples
 of this. Notice how your eye jumps immediately to the few contrasting
-streak in each of these images:
+streaks in each of these images:
 
 ![](/public/images/2018-02-11-generative-color-algorithms/key-ex-low.png)
 ![](/public/images/2018-02-11-generative-color-algorithms/key-ex-mid.png)
 ![](/public/images/2018-02-11-generative-color-algorithms/key-ex-high.png)
 
-Notice how your eye is directed towards the dark streaks in the image with
+Notice how your eye is directed towards the white streaks in the image with
 a low-key background. Simiarly, we end up highlighting both the white and
 black streaks with the middle key background, and the black with the high-key
 background.
 
 Here is a similar example but using the full range of values from our value
-scale. It's subtle, but the larger range of values in the background lowers
-the contrast for the white streaks, making things a bit more muddy.
+scale:
 
 ![](/public/images/2018-02-11-generative-color-algorithms/key-ex-full.png)
 
-And in the end, maybe that's exactly what you want! Maybe you want the
-whites to be subdued through the use of a full value range. However, my
-point is simply that thinking about value keys lets you be more deliberate
-about this choice, rather than having to hope for the best. After all,
+It's subtle, but the larger range of values in the background lowers
+the contrast for the white streaks, making things a bit more muddy.
+Or perhaps that's exactly what you want! Maybe you want the
+whites to be subdued through the use of a full value range. However, 
+thinking about value keys lets you be more deliberate
+in this choice, rather than hoping for the best. After all,
 a piece of visual art is merely an exercise in configuring values across
-the canvas in interesting shapes with some color thrown in!
+a canvas in interesting shapes with some color thrown in!
 
 That's all for now! Enjoy!
 
