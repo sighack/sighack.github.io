@@ -129,9 +129,25 @@ color[] hsbValueScale(int n) {
 And that's it! You can now play around with different value scales and explore
 monochromatic palettes in a more structured way!
 
+Now that we've looked at how to create value scales programmatically,
+here are some very simple examples of the kinds of effects you can get out of these
+value scales:
+
+|-----|------|
+|![](/public/images/2018-02-11-generative-color-algorithms/m-ex1.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex2.png)
+|![](/public/images/2018-02-11-generative-color-algorithms/m-ex3.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex4.png)
+|![](/public/images/2018-02-11-generative-color-algorithms/m-ex5.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex6.png)
+|![](/public/images/2018-02-11-generative-color-algorithms/m-ex7.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex8.png)
+|![](/public/images/2018-02-11-generative-color-algorithms/m-ex9.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex10.png)
+|![](/public/images/2018-02-11-generative-color-algorithms/m-ex11.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex12.png)
+
 ### Why Do Values Matter?
 
-Value is the component of color that confers depth.
+There are two big reasons why values matter. First, changes in value are what
+confer an illusion of depth to a painting, and second contrasting values can be
+used to create a strong focal point within an artwork.
+
+**Gradations of value create the illusion of depth.**
 It's what we see when we look at a grayscale version of an image. Here's
 an example of [a generative portrait I made a while back using
 k-means clustering](generative-value-sketches-using-k-means-clustering). It
@@ -151,15 +167,39 @@ original!
 ![](/public/images/2018-02-11-generative-color-algorithms/value.gif)
 *CC0-licensed image courtesy of <a target="_blank" href="https://www.pexels.com/photo/red-cherries-on-stainless-steel-bowl-1178610/">Pexels</a>*
 
-Here are some very simple examples of the kinds of effects you can get out of these
-value scales:
+**Value contrast creates focal points.** Placing elements with strongly-contrasting
+values next to each other tends to immediately draw the eye to those points in an
+artwork.
 
-|-----|------|
-|![](/public/images/2018-02-11-generative-color-algorithms/m-ex1.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex2.png)
-|![](/public/images/2018-02-11-generative-color-algorithms/m-ex3.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex4.png)
-|![](/public/images/2018-02-11-generative-color-algorithms/m-ex5.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex6.png)
-|![](/public/images/2018-02-11-generative-color-algorithms/m-ex7.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex8.png)
-|![](/public/images/2018-02-11-generative-color-algorithms/m-ex9.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex10.png)
-|![](/public/images/2018-02-11-generative-color-algorithms/m-ex11.png)|![](/public/images/2018-02-11-generative-color-algorithms/m-ex12.png)
+![](/public/images/2018-02-11-generative-color-algorithms/value-ex1.jpeg){: .center-image }
+
+Looking at the above image, regardless of where you start out, you'll find your
+eyes sort of sinking down to the bright flame area, which has a strong _value contrast_
+with the dark background, and the rest of the image in general. Only from there do your
+eyes wander to the other details of the scene.
+
+This difference in contrast doesn't even have to be so strong. Here is another example
+of this:
+
+![](/public/images/2018-02-11-generative-color-algorithms/value-ex2.jpeg){: .center-image }
+
+Above, the focus immediately jumps to the eyes, which stand apart from the
+somewhat lighter area around her upper cheek even though the contrast is not as high
+in the previous image. Also note how the darkened eyelashes make the
+eyes stand out even more by introducing a strong value contrast! The next thing that
+stands out is the earring, which has a lighter value compared to the rest of the scene.
+
+Finally, we can see a similar focusing of the viewer in color images as well:
+
+![](/public/images/2018-02-11-generative-color-algorithms/value-ex3.jpeg){: .center-image }
+
+Did your eyes jump immediately to the bright sign on the building right of center? Possibly
+to the building by the water? That's because the contrasting values are like a magnet
+for your eyes!
+
+None of this is magic; it's simply how our eyes work, and as an artist, introducing value
+contrast is one tool in many that allows you to guide the viewer through your painting.
+
+Enjoy!
 
 ![](/public/images/end.gif){: .center-image }

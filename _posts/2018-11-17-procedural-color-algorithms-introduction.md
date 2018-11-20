@@ -63,6 +63,11 @@ In this article, we'll look at monochromatic color schemes and how we can use
 them programmatically. More specifically, I go into detail on _color values_
 and why they matter, as well as how we can procedurally generate _value scales_.
 
+**[Value/Tonal Keys](procedural-color-algorithms-value-keys):**
+In this article, we'll look at how we can use subsets of value scales, or _value keys_,
+to be more deliberate in our choice of values, and open up space for other elements
+of our artwork.
+
 **More articles coming soon as I write/edit them...**
 
 ![](/public/images/end.gif){: .center-image }
