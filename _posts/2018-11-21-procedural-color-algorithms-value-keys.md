@@ -72,7 +72,7 @@ visual difference between each one. You might want a specific overall
 shade for your artwork, which naturally leads you to a subset of values.
 
 However, this is not the primary reason I'm writing about this. The big
-reason I think value scales can be powerful for generative artists is
+reason I think value keys can be powerful for generative artists is
 because it provides more control over your artwork, opening it up for
 other elements. Further, by reducing the value contrast, we remove the
 strength of value alone to define the entire artwork, giving us breathing
