@@ -62,7 +62,7 @@ Here is the same image as above, but **using a middle key**:
 
 ![](/public/images/2018-02-11-generative-color-algorithms/key-mid.png)
 
-Finally, here is an identical version **using a high key, with only the darker
+Finally, here is an identical version **using a high key, with only the lighter
 values from our value scale**:
 
 ![](/public/images/2018-02-11-generative-color-algorithms/key-high.png)
