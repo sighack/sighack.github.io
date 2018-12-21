@@ -202,14 +202,10 @@ ArrayList<PVector> chaikin_cut(PVector a, PVector b, float ratio) {
   ArrayList<PVector> n = new ArrayList<PVector>();
 
   /*
-   * Swap a and b if ratio is < 0.5. This avoids cutting
-   * across the midpoint of the line.
+   * If ratio is less than 0.5 flip it so we avoid cutting across
+   * the midpoint of the line.
    */
-  if (ratio < 0.5) {
-    PVector tmp = a;
-    a = b;
-    b = tmp;
-  }
+   if (ratio < 0.5) ratio = 1 - ratio;
 
   /* Find point at a given ratio going from A to B */
   x = lerp(b.x, a.x, ratio);
@@ -232,9 +228,9 @@ point B, and one when going in the reverse direction. For example, cutting an
 edge with a ratio of 0.25 would give us two points: the first at 25% from point A
 and the other at 75% from point A (or 25% from point B).
 
-You'll notice an `if` condition that checks the value of `ratio`.5. If  this
-case, we swap vertices A and B. This is required because specifying a cut ratio
-too large will lead to cutting across the midpoint of the edge, leading to an
+You'll notice an `if` condition that checks the value of `ratio`. In this
+case, we invert the value. This is required to avoid
+cutting across the midpoint of the edge, leading to an
 incorrect ordering of vertices in the final shape. This little `if` statement
 fixes that before we do all our calculations.
 
