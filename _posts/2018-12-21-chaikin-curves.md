@@ -21,7 +21,7 @@ involved generating a new curve by cutting the corners off the original
 (based on some fixed ratio), and repeating this a bunch of times.
 
 Here is a visual demonstration of Chaikin's corner-cutting algorithm with
-three iterations:
+three iterations and a cut ratio of 25%:
 
 ![Chaikin curve corner-cutting algorithm animation for a polyline (open shape)](/public/images/chaikin-curves/curve.gif)
 *Animation of Chaikin's Corner-Cutting Algorithm for a Polyline*
