@@ -13,14 +13,14 @@ over on Twitter and he's been churning out absolutely beautiful stuff on his
 plotters. If you haven't seen them yet, go check them out over at 
 [#plottertwitter](https://twitter.com/hashtag/plottertwitter).
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/1.jpg)
+![An example of Paul Rickard's plotter art available for sale](/public/images/cohen-sutherland-line-clipping-algorithm/1.jpg)
 *Tri-color plot by Paul Rickards*
 
 Looking closely at one of his works, one sees that it's comprised of a grid
 of squares, with lines at arbitrary angles with variations in the spacing
 between them.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/3.jpg)
+![A closeup of Paul Rickard's plotter art shows a grid of squares with clipped parallel lines](/public/images/cohen-sutherland-line-clipping-algorithm/3.jpg)
 *Detail of section showing clipped parallel lines*
 
 ## Breaking it Down
@@ -37,22 +37,22 @@ Paul in his plots; rather it is simply my interpretation of how I would go
 about generating something similar. Here are some of the results of my
 approach.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/e3.png)
+![Example with a grid of tiles with parallel lines at randomly-generated angles and uniform line spacing](/public/images/cohen-sutherland-line-clipping-algorithm/e3.png)
 *Tiles with random angles and uniform line spacing*
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/e2.png)
+![Another example with parallel lines at randomly-generated angles but random line spacing](/public/images/cohen-sutherland-line-clipping-algorithm/e2.png)
 *Tiles with random angles and random line spacing*
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/e1.png)
+![An example with parallel lines at noise-based angles and with random line spacing](/public/images/cohen-sutherland-line-clipping-algorithm/e1.png)
 *Tiles with noise-based angles and random line spacing*
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/e5.png)
+![An example with parallel lines at random angles but Y-coordinate-based spacing](/public/images/cohen-sutherland-line-clipping-algorithm/e5.png)
 *Tiles with random angles and Y-axis-based spacing*
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/e4.png)
+![A final example with parallel lines at random angles but line spacing based on an underlying image](/public/images/cohen-sutherland-line-clipping-algorithm/e4.png)
 *Tiles with random angles and image-based line spacing*
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/e4-highres.png)
+![A closeup of the previous image-based example](/public/images/cohen-sutherland-line-clipping-algorithm/e4-highres.png)
 *Detail of image-based portrait*
 
 ## Overview of the Approach
@@ -61,7 +61,7 @@ The basic idea is to _(i)_ draw a single line at an arbitrary
 angle, _(ii)_ create parallel copies of it spaced by some user-specified
 distance, and finally _(ii)_ _clip them off_ to fall within a specified square.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/approach.png)
+![Three step technique describing generation of a single tile shown in the prior examples](/public/images/cohen-sutherland-line-clipping-algorithm/approach.png)
 
 So how do we actually perform these steps? In particular, how do we manage
 the third step, where we clip lines
@@ -112,7 +112,7 @@ To perform these steps, we need only consider the endpoints of our line. If
 both endpoints lie inside the clip window, then the entire line lies inside
 the window.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/case1.svg)
+![The first case of the Cohen-Sutherland line clipping algorithm when the line endpoints lie entirely within the clip window](/public/images/cohen-sutherland-line-clipping-algorithm/case1.svg)
 
 Similarly, if both endpoints of a line lie within the same side of
 the clip window, the line must lie outside it entirely, Below are illustrated
@@ -120,13 +120,13 @@ the four cases. Also note that you can have an endpoint belonging to
 multiple regions, such as the top and left region as is the case for the left
 endpoint of the topmost line in the figure below.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/case2.svg)
+![The second case of the Cohen-Sutherland line clipping algorithm when the line endpoints both lie on the same side of the clip window](/public/images/cohen-sutherland-line-clipping-algorithm/case2.svg)
 
 Finally, we get to the case where either both the endpoints lie on different
 sides of the clip window or one of them does (with the other within the window
 itself). Illustrated below are the three cases that are possible.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/case3.svg)
+![The third and final case of the Cohen-Sutherland line clipping algorithm when the line endpoints lie on different sides of the clip plane](/public/images/cohen-sutherland-line-clipping-algorithm/case3.svg)
 
 Importantly, note that we can still have the case that the line falls outside
 the clip window, as illustrated by the leftmost line above.
@@ -140,8 +140,8 @@ algorithm does this through a simple integer-based bitmap for each endpoint.
 The first image below shows how the algorithm uses four bits to represent
 regions. The image further below shows the resulting encoding for each region.
 
-![](/public/images/cohen-sutherland-line-clipping-algorithm/bits.svg)
-![](/public/images/cohen-sutherland-line-clipping-algorithm/bits2.svg)
+![The four bits used to encode in which region a given endpoint lies](/public/images/cohen-sutherland-line-clipping-algorithm/bits.svg)
+![The bit-based encoding for each of the regions around the clip window.](/public/images/cohen-sutherland-line-clipping-algorithm/bits2.svg)
 
 Let's quickly write a helper function to do this:
 
