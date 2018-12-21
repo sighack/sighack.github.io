@@ -11,6 +11,8 @@ as well as some ways you can use them in your artwork.
 
 *If you're looking for a copy-pastable version of this algorithm in Processing, scroll to the end of the post!*
 
+*All Processing code for this article, along with images and animated GIFs, can be found [on Github](https://github.com/sighack/chaikin-curves)*
+
 ## Chaikin Curves
 
 In 1974, George Chaikin presented one of the first _refinement-based corner cutting_
