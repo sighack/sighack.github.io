@@ -504,3 +504,18 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.half-width {
+    width: 50%;
+    float: left;
+}
+
+.right-image {
+    max-width: 50%;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.img-center > img {
+    text-align: right;
+}

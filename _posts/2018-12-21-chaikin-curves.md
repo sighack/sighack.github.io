@@ -202,19 +202,19 @@ ArrayList<PVector> chaikin_cut(PVector a, PVector b, float ratio) {
   ArrayList<PVector> n = new ArrayList<PVector>();
 
   /*
-   * If ratio is less than 0.5 flip it so we avoid cutting across
+   * If ratio is greater than 0.5 flip it so we avoid cutting across
    * the midpoint of the line.
    */
-   if (ratio < 0.5) ratio = 1 - ratio;
+   if (ratio > 0.5) ratio = 1 - ratio;
 
   /* Find point at a given ratio going from A to B */
-  x = lerp(b.x, a.x, ratio);
-  y = lerp(b.y, a.y, ratio);
+  x = lerp(a.x, b.x, ratio);
+  y = lerp(a.y, b.y, ratio);
   n.add(new PVector(x, y));
 
   /* Find point at a given ratio going from B to A */
-  x = lerp(a.x, b.x, ratio);
-  y = lerp(a.y, b.y, ratio);
+  x = lerp(b.x, a.x, ratio);
+  y = lerp(b.y, a.y, ratio);
   n.add(new PVector(x, y));
 
   return n;
@@ -228,9 +228,9 @@ point B, and one when going in the reverse direction. For example, cutting an
 edge with a ratio of 0.25 would give us two points: the first at 25% from point A
 and the other at 75% from point A (or 25% from point B).
 
-You'll notice an `if` condition that checks the value of `ratio`. In this
-case, we invert the value. This is required to avoid
-cutting across the midpoint of the edge, leading to an
+You'll notice an `if` condition that checks the value of `ratio` and inverts it
+if the value is greater than 0.5. This is required to avoid
+cutting across the midpoint of the edge, which would otherwise lead to an
 incorrect ordering of vertices in the final shape. This little `if` statement
 fixes that before we do all our calculations.
 
@@ -361,14 +361,20 @@ ArrayList<PVector> chaikin_cut(PVector a, PVector b, float ratio) {
   float x, y;
   ArrayList<PVector> n = new ArrayList<PVector>();
 
+  /*
+   * If ratio is greater than 0.5 flip it so we avoid cutting across
+   * the midpoint of the line.
+   */
+   if (ratio > 0.5) ratio = 1 - ratio;
+
   /* Find point at a given ratio going from A to B */
-  x = lerp(b.x, a.x, ratio);
-  y = lerp(b.y, a.y, ratio);
+  x = lerp(a.x, b.x, ratio);
+  y = lerp(a.y, b.y, ratio);
   n.add(new PVector(x, y));
 
   /* Find point at a given ratio going from B to A */
-  x = lerp(a.x, b.x, ratio);
-  y = lerp(a.y, b.y, ratio);
+  x = lerp(b.x, a.x, ratio);
+  y = lerp(b.y, a.y, ratio);
   n.add(new PVector(x, y));
 
   return n;
