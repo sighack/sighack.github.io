@@ -1,7 +1,7 @@
 ---
 title: Generative Overlay Textures
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-01-03-getting-creative-with-perlin-noise-fields/example-4.png
+image: http://sighack.com/public/images/generative-overlay-textures/example-1.png
 description: A simple technique for adding texture to your art using low-opacity overlay shapes.
 ---
 
