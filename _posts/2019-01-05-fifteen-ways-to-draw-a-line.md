@@ -42,7 +42,7 @@ Enough talking. Here are the results! Enjoy!
 
 I started with a basic formatting of different weights and values that I was looking for
 and went with the simplest possible line. Below, the stroke weight increases from left
-to right, and the values get darker from top to bottom:
+to right, and the values get lighter from top to bottom:
 
 <a href="/public/images/fifteen-ways-to-draw-a-line/highres-1.png" target="_blank">
 ![](/public/images/fifteen-ways-to-draw-a-line/lowres-1.png)
