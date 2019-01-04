@@ -1,7 +1,7 @@
 ---
 title: Fifteen Ways to Draw a Line
 author: Manohar Vanga
-image: http://sighack.com/public/images/2018-02-03-seventy-five-ways-to-draw-a-circle/circle-44.png
+image: https://sighack.com/public/images/fifteen-ways-to-draw-a-line/lowres-8.png
 description: An exploration on drawing textured lines generatively in fifteen different ways.
 ---
 
