@@ -519,3 +519,9 @@ ul {
 .img-center > img {
     text-align: right;
 }
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 31px -1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 0px 31px -1px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 31px -1px rgba(0,0,0,0.37);
+}
