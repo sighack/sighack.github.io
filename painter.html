@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/css/painter.css" />
+  </head>
+  <body>
+    <div class='container' id='main'>
+      <div class='row'>
+        <div class='col-md-9'>
+          <div id="sketch-holder"></div>
+        </div>
+        <div class='col-md-3'>
+          <div onclick="openUploadDialog()" id='upload-button'><div class='upload-button-inside'>Upload an Image</div></div>
+          <div class='separator'></div>
+          <h3>Brush Settings</h3>
+          <div class='control' id='brush-shape'><p>Shape</p></div>
+          <div class='control' id='brush-style'><p>Style</p></div>
+          <div class='control' id='alpha-slider'><p>Opacity</p></div>
+          <div class='control' id='size-selector'><p>Size</p></div>
+          <div class='separator'></div>
+          <h3>Processes</h3>
+          <div class='control' id='random-button'></div>
+          <div class='control' id='tile-button'></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.4/seedrandom.min.js"></script>
+
+    <!-- P5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <!--<script src="/public/js/p5.svg.js"></script>-->
+    <script src="/public/js/painter.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+    <!-- Uploadcare -->
+    <script>UPLOADCARE_PUBLIC_KEY='cc7893357094692d5174'</script>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>
+    <script src="https://ucarecdn.com/libs/widget-tab-effects/1.x/uploadcare.tab-effects.js" charset="utf-8"></script>
+
+    <script>
+      /* Function to open an Uploadcare dialog */
+      function openUploadDialog() {
+        UPLOADCARE_PREVIEW_STEP = true;
+        uploadcare.registerTab('preview', uploadcareTabEffects);
+        uploadcare.openDialog(null, {
+          publicKey: 'cc7893357094692d5174',
+          previewStep: true,
+          imagesOnly: true,
+          crop: '1:1 upscale',
+          effects: "crop,rotate,mirror,flip,blur,sharp,enhance,grayscale,invert",
+          tabs: "file camera facebook gdrive gphotos dropbox instagram",
+        }).done(function(file) {
+          file.done(function(info) {
+            console.log(info.cdnUrl);
+            $('#upload-button').html('<img id="current-img" src="' + info.cdnUrl + '/-/resize/100x100/' + '" />');
+            $('#upload-button').addClass('image-loaded');
+            painterLoadImage(info.cdnUrl + '/-/resize/600x600/');
+          });
+        });
+      }
+    </script>
+
+  </body>
+</html>

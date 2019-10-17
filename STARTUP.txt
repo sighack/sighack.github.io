@@ -1,0 +1,126 @@
+COMPANY
+Company name:
+Company url, if any:
+If you have a demo, what's the url? For non-software, demo can be a video.
+(Please don't password protect it; just use an obscure url.)
+What is your company going to make?
+Where do you live now, and where would the company be based after YC?
+
+
+FOUNDERS
+How long have the founders known one another and how did you meet? Have any of the founders not met in person?
+
+
+PROGRESS
+How far along are you?
+How long have each of you been working on this? Have you been part-time or full-time? Please explain.
+Which of the following best describes your progress?
+When will you have a prototype or beta?
+Do you have revenue?
+How much money do you spend per month?
+How much money does your company have in the bank now?
+How long is your runway? (e.g. 5 months)
+If you've applied previously with the same idea, how much progress have you made since the last time you applied? Anything change?
+If you have already participated or committed to participate in an incubator, "accelerator" or "pre-accelerator" program, please tell us about it.
+
+
+IDEA
+Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know people need what you're making?
+What's new about what you're making? What substitutes do people resort to because it doesn't exist yet (or they don't know about it)?
+Who are your competitors, and who might become competitors? Who do you fear most?
+What do you understand about your business that other companies in it just don't get?
+How do or will you make money? How much could you make? (We realize you can't know precisely, but give your best estimate.)
+How will you get users? If your idea is the type that faces a chicken-and-egg problem in the sense that it won't be attractive to users till it has a lot of users (e.g. a marketplace, a dating site, an ad network), how will you overcome that?
+
+
+EQUITY
+Have you incorporated, or formed any legal entity (like an LLC) yet?
+If you have not formed the company yet, describe the planned equity ownership breakdown among the founders, employees and any other proposed stockholders. (This question is as much for you as us.)
+Please provide any other relevant information about the structure or formation of the company.
+
+
+LEGAL
+Are any of the founders covered by noncompetes or intellectual property agreements that overlap with your project? If so, please explain.
+Who writes code, or does other technical work on your product? Was any of it done by a non-founder? Please explain.
+Is there anything else we should know about your company? (Pending lawsuits, cofounders who have left, etc.)
+
+
+OTHERS
+If you had any other ideas you considered applying with, please list them. One may be something we've been waiting for. Often when we fund people it's to do something they list here and not in the main application.
+Please tell us something surprising or amusing that one of you has discovered. (The answer need not be related to your project.)
+
+
+CURIOUS
+What convinced you to apply to Y Combinator?
+How did you hear about Y Combinator?
+
+
+
+
+
+
+
+
+MVP Architecture
+================
+
+           |---------> PostgreSQL
+           |
+           |                      |----> Django Worker
+----> Django Web ----> Redis ---->|
+           |                      |----> Nodejs Worker
+           |
+           |---------> S3/Uploadcare
+
+
+Sketch --> privately edited for now
+
+User --> A single user in the system.
+Image --> An image uploaded by the user.
+Artwork --> A combination of an image and a sketch.
+Item --> A combination of an artwork and print medium (for purchase).
+
+Address --> One or more per user
+Payment Method --> One or more per account
+Purchase --> A completed purchase with status and invoice
+Cart --> A cart with multiple Item's
+
+
+Click to upload page with upload widget --> If logged in, should show list of images previously uploaded by the user.
+Page with various versions of image with
+    - Add to cart button --> slides down size/frame color options.
+    - Share button --> Requires immediate signup --> Associate image + artwork with user.
+    - Timeline button --> Requires immediate signup --> Associate image + artwork with user.
+    - Scrolling to end generates more versions.
+Clicking on version allows modifying properties (+add to cart, +share link) .
+Cart details page.
+Checkout page --> Enter billing address, shipping address, credit card details. Option to save details in acct.
+Thank you page --> completing buy ends up at timeline page with thank you note on top --> "Share this purchase on timeline" button.
+Past purchases page --> Show list of past purchases.
+
+
+Backend -->
+    - Flask REST API + gRPC Workers
+        - Users can login and create API keys to authenticate
+        - CRUD for Sketches --> initially, no checks
+        - CRUD for Modules --> initially, no checks
+        - Create individual requests
+            - Can specify resources
+            - Can specify parameters
+            - Can specify output format
+        - Create group requests
+            - Can specify sequence of individual requests
+
+    - Django ecommerce backend
+        - CRUD for image generation requests
+
+
+
+
+
+JS Sandboxing
+=============
+
+                     Redis Q               gRPC                   JSON     |-->          Shared Object
+----> Web Frontend ----------> Worker -------------> Renderer -------------|--> Process --------------> vm2 Sandbox
+                     params            params+data             params+data |-->           params+data
